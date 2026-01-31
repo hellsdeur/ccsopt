@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 
-class ConcreteCompressiveStrengthPredictor:
+class CCSPredictor:
     def __init__(self, bundle_path: str):
         self.bundle = joblib.load(bundle_path)
         self.model = self.bundle["model"]
